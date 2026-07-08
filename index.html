@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Devansh Shah | CPA, CA, CFA Level I - Finance Professional</title>
 <meta name="description" content="Devansh Shah, CPA, CA and CFA Level I. Finance professional focused on financial planning and analysis (FP&A), corporate finance and financial analysis." />
-
+<meta name="robots" content="noindex, nofollow" />
 <!-- ============================================================
      CANONICAL URL & SOCIAL SHARING PREVIEWS
      ------------------------------------------------------------
@@ -94,6 +94,8 @@
     opacity: 0.35;
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.05 0 0 0 0 0.04 0 0 0 0 0.02 0 0 0 0.06 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   }
+  ::selection { background: rgba(156, 124, 56, 0.22); color: var(--ink); }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
   img { max-width: 100%; display: block; }
   a { color: inherit; text-decoration: none; }
 
@@ -136,7 +138,7 @@
     position: relative;
     z-index: 2;
   }
-  section { padding: var(--section-pad) 0; position: relative; }
+  section { padding: var(--section-pad) 0; position: relative; scroll-margin-top: 72px; }
   .section-head { margin-bottom: 56px; }
   .section-head h2 { margin-top: 14px; max-width: 720px; }
 
@@ -981,6 +983,27 @@
     .reveal { opacity: 1; transform: none; transition: none; }
     html { scroll-behavior: auto; }
   }
+     
+ /* ============================================================
+     16. PRINT
+     ============================================================ */
+  @media print {
+    body { background: #fff; }
+    body::before, .nav, .hero-actions, footer { display: none; }
+    .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+    section { padding: 32px 0; scroll-margin-top: 0; }
+    .project, .tl-item, .edu-block, .cred-item { break-inside: avoid; }
+    .project { box-shadow: none !important; transform: none !important; }
+    .project.featured { background: #fff; color: var(--ink); border: 1px solid var(--hairline); }
+    .project.featured h3 { color: var(--ink); }
+    .project.featured p { color: var(--ink-soft); }
+    .project.featured .project-tag, .project.featured .project-tag span { color: var(--accent); }
+    .project.featured .project-metric { border-top-color: var(--hairline-soft); }
+    .project.featured .project-metric .k { color: var(--ink-muted); }
+    .project.featured .project-metric .v { color: var(--ink); }
+    .hero-photo { box-shadow: none; }
+    .extras { background: #fff; }
+  }
 </style>
 </head>
 <body>
@@ -1073,7 +1096,7 @@
       </div>
       <div class="stat">
         <div class="num">5</div>
-        <div class="label">Valuation and analysis<br/>case projects</div>
+        <div class="label">Forecasting and analysis<br/>case projects</div>
       </div>
     </div>
   </div>
@@ -1094,7 +1117,7 @@
           I came into finance through accounting and audit. Four years at <strong>PricewaterhouseCoopers (PwC)</strong> in Mumbai, first as an audit trainee and then as an associate in Capital Markets and Accounting Advisory, put me in the room for technical work most peers haven't seen at this stage. An IFRS to US GAAP conversion and SEC filing readiness for a $34B Irish-listed industrials group. An IFRS transition for a $2B Saudi conglomerate. An embedded month-end close role inside a $20B UK telecom group. That period taught me how financial statements actually behave under reporting pressure and auditor scrutiny.
         </p>
         <p>
-          The <strong>MS Finance program at UIUC Gies</strong> layered on the modeling, valuation and forecasting work that financial analysts do every day. Three-statement models, scenario DCFs, sensitivity analysis and rolling forecasts on real public companies, defended in front of professors who had seen every assumption before. That same work now runs through my role as a <strong>Finance Associate at Aorbis Inc.</strong>, where I lead monthly close, build rolling cash flow forecasts, diagnose working capital and support the financial planning behind a new service launch. Accounting discipline, FP&amp;A analysis and commercial decision support all sit in one seat.
+          The <strong>MS Finance program at UIUC Gies</strong> layered on the modeling, forecasting and analysis work that financial analysts do every day. Three-statement models, scenario DCFs, sensitivity analysis and rolling forecasts on real public companies, defended in front of professors who had seen every assumption before. That same work now runs through my role as a <strong>Finance Associate at Aorbis Inc.</strong>, where I lead monthly close, build rolling cash flow forecasts, diagnose working capital and support the financial planning behind a new service launch. Accounting discipline, FP&amp;A analysis and commercial decision support all sit in one seat.
         </p>
         <p>
           What I am building toward is a seat as a <strong>Financial Analyst, FP&amp;A Analyst or Corporate Finance Analyst</strong>. The kind of work where the numbers have to drive the decision and where a forecast or a margin analysis has to hold up in the room with operators and executives. My background in reporting means the underlying data is right. My modeling background means the analysis is sharp. And my current role means I have already done a version of the work.
@@ -1131,7 +1154,7 @@
           <li>Built <strong>rolling cash flow forecasts and revenue quality analysis</strong> to improve management visibility into liquidity, variance drivers and capital allocation decisions, supporting weekly and monthly review cycles.</li>
           <li>Diagnosed the working capital cycle across receivables, payables and short-term debt. Recommended process changes that <strong>shortened the cash conversion cycle by 5 days</strong> and freed up operating cash for reinvestment.</li>
           <li>Lead <strong>monthly close, journal entries, balance sheet reconciliations and US GAAP financial reporting</strong> on QuickBooks. Tighter controls and a more structured close process <strong>reduced recurring period-end adjustments by approximately 20%</strong>.</li>
-          <li>Supporting the launch of a <strong>new service segment OSTE</strong>, coordinating with the marketing head on go-to-market strategy and aligning financial analysis with commercial decisions.</li>
+          <li>Supporting the launch of a <strong>new service segment, OSTE</strong>, coordinating with the marketing head on go-to-market strategy and aligning financial analysis with commercial decisions.</li>
         </ul>
       </div>
 
@@ -1256,7 +1279,7 @@
   <div class="container">
     <div class="section-head reveal">
       <span class="eyebrow"><span class="eyebrow-num">04</span>Selected Projects</span>
-      <h2>Five case studies in corporate finance, financial analysis, valuation and data analytics</h2>
+      <h2>Five case studies in corporate finance, forecasting, financial analysis and data analytics</h2>
     </div>
 
     <div class="projects-grid stagger">
@@ -1273,12 +1296,12 @@
             <div class="row"><span class="k">Investment evaluated</span><span class="v">$1.5B</span></div>
             <div class="row"><span class="k">WACC pre-debt</span><span class="v">8.8%</span></div>
             <div class="row"><span class="k">WACC post-debt</span><span class="v">8.7%</span></div>
-            <div class="row"><span class="k">Post-investment leverage</span><span class="v">~1.4% debt / capital</span></div>
+            <div class="row"><span class="k">Post-investment leverage</span><span class="v">1.4% debt / capital</span></div>
           </div>
           <div>
             <div class="row"><span class="k">DCF range (worst / base / best)</span><span class="v">$628 / $856 / $1,155</span></div>
             <div class="row"><span class="k">Market reference price</span><span class="v">$1,057</span></div>
-            <div class="row"><span class="k">Verdict</span><span class="v">Modestly overvalued</span></div>
+            <div class="row"><span class="k">DCF conclusion</span><span class="v">Price above base case</span></div>
             <div class="row"><span class="k">Financing recommendation</span><span class="v">Moderate debt</span></div>
           </div>
         </div>
@@ -1286,25 +1309,25 @@
 
       <div class="project reveal">
         <div class="project-tag">Applied Financial Analysis Course <span>·</span> UIUC Gies</div>
-        <h3>Lennox International vs. Trane Technologies: Comparative HVAC Equity Valuation</h3>
+        <h3>Lennox International vs. Trane Technologies: Comparative Financial Analysis of Two HVAC Leaders</h3>
         <p>Built 10-year DCF models for Lennox International Inc. and Trane Technologies plc with company-specific WACC, sensitized across revenue growth, margin and capex. Cross-validated using EV / EBITDA, P / E comparables and ROIC analysis. Concluded Trane offered the better risk-adjusted setup given backlog visibility and innovation pipeline. Lennox screened high quality but materially overvalued at the time of analysis.</p>
         <div class="project-metric">
-          <div class="row"><span class="k">Trane recommendation</span><span class="v">BUY · ~9% upside</span></div>
+          <div class="row"><span class="k">Trane conclusion</span><span class="v">Undervalued · 9% upside</span></div>
           <div class="row"><span class="k">Trane DCF vs. market</span><span class="v">$455 vs. $417.78</span></div>
-          <div class="row"><span class="k">Lennox recommendation</span><span class="v">HOLD</span></div>
+          <div class="row"><span class="k">Lennox conclusion</span><span class="v">HOLD</span></div>
           <div class="row"><span class="k">Lennox DCF vs. market</span><span class="v">$511.52 vs. $665.53</span></div>
         </div>
       </div>
 
       <div class="project reveal">
         <div class="project-tag">Applied Portfolio Management Course <span>·</span> UIUC Gies</div>
-        <h3>Macro-Driven Equity Coverage: A Three-Stock Defensive Portfolio</h3>
-        <p>Translated a machine-learning macro forecast into sector and stock selection. The Random Forest model, trained on monthly ISM PMI and CPI data, flagged a stagflationary regime. From that signal came coverage on three defensive names, each with a full investment thesis, scenario DCF and downside cases. The lead BUY thesis on DT Midstream rested on its 70% pipeline EBITDA mix, $2.3B project backlog and inflation-protected fee-based contracts.</p>
+        <h3>From Macro Signal to Company Forecasts: A Three-Stock Defensive Study</h3>
+        <p>Translated a machine-learning macro forecast into sector and stock selection. The Random Forest model, trained on monthly ISM PMI and CPI data, flagged a stagflationary regime. From that signal came deep-dive analysis on three defensive names, each with a full forecast build, scenario DCF and downside case. The strongest conclusion, on DT Midstream, rested on its 70% pipeline EBITDA mix, $2.3B project backlog and inflation-protected fee-based contracts.</p>
         <div class="project-metric">
           <div class="row"><span class="k">Macro signal</span><span class="v">Stagflation regime</span></div>
-          <div class="row"><span class="k">DT Midstream Inc.</span><span class="v">BUY · 19% upside</span></div>
-          <div class="row"><span class="k">McKesson Corporation</span><span class="v">HOLD</span></div>
-          <div class="row"><span class="k">Elevance Health Inc.</span><span class="v">SELL</span></div>
+          <div class="row"><span class="k">DT Midstream Inc.</span><span class="v">Undervalued · 19% upside</span></div>
+          <div class="row"><span class="k">McKesson Corporation</span><span class="v">Fairly valued</span></div>
+          <div class="row"><span class="k">Elevance Health Inc.</span><span class="v">Overvalued</span></div>
         </div>
       </div>
 
@@ -1323,11 +1346,11 @@
       <div class="project reveal">
         <div class="project-tag">Investment Banking Course <span>·</span> UIUC Gies</div>
         <h3>SpartanNash Company: Standalone Valuation, LBO and Strategic Decision</h3>
-        <p>Triangulated SpartanNash Company's intrinsic value using DCF, trading comparables and precedent transactions. Built a 5-year sponsor LBO at 4.0x leverage and a 6.0x exit multiple, then evaluated a potential acquisition by United Natural Foods (UNFI). Recommended deferring strategic action by one to two years until UNFI hit its 2.5x leverage target and SpartanNash strengthened operational performance.</p>
+        <p>Estimated SpartanNash Company's standalone value using DCF, trading comparables and precedent transactions. Stress-tested the capital structure through a 5-year LBO scenario at 4.0x leverage with a 6.0x exit assumption, then modeled the financial case for a combination with United Natural Foods (UNFI). Recommended deferring strategic action by one to two years until UNFI hit its 2.5x leverage target and SpartanNash strengthened operational performance. Recommended deferring strategic action by one to two years until UNFI hit its 2.5x leverage target and SpartanNash strengthened operational performance.</p>
         <div class="project-metric">
           <div class="row"><span class="k">Implied per-share range</span><span class="v">$16.27 – $27.39</span></div>
-          <div class="row"><span class="k">LBO leverage / exit multiple</span><span class="v">4.0x / 6.0x</span></div>
-          <div class="row"><span class="k">Sponsor IRR / MOIC</span><span class="v">20% / 2.5x</span></div>
+          <div class="row"><span class="k">Leverage scenario / exit assumption</span><span class="v">4.0x / 6.0x</span></div>
+          <div class="row"><span class="k">5-year scenario IRR / MOIC</span><span class="v">20% / 2.5x</span></div>
           <div class="row"><span class="k">Recommendation</span><span class="v">Defer UNFI sale</span></div>
         </div>
       </div>
